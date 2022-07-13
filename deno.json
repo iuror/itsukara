@@ -1,0 +1,11 @@
+{
+  "tasks": {
+    "start": "deno run --allow-read='.' --allow-write='.' --allow-net='iuror.github.io,api.twitter.com,api.twitch.tv,www.youtube.com' main.ts"
+  },
+  "importMap": "./import_map.json",
+  "fmt": {
+    "options": {
+      "lineWidth": 100
+    }
+  }
+}

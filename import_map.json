@@ -1,0 +1,7 @@
+{
+  "imports": {
+    "cheerio/": "https://esm.sh/cheerio@next/",
+    "fast-xml-parser/": "https://esm.sh/fast-xml-parser@4/",
+    "twind/": "https://esm.sh/twind@0.16.17/"
+  }
+}

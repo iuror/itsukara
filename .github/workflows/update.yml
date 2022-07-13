@@ -1,0 +1,34 @@
+name: update
+
+on:
+
+  schedule:
+    - cron: '*/30 */1 * * *'
+
+  push:
+    path:
+      paths:
+        - './src/data/**'
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Setup Deno
+      uses: denoland/setup-deno@v1
+      with:
+        deno-version: v1.23.0
+
+    - name: Update
+      run: deno task start --twitter-access-token="${{ secrets.TWITTER_ACCESS_TOKEN }}" --twitch-access-token="${{ secrets.TWITCH_ACCESS_TOKEN }}" --twitch-client-id="${{ secrets.TWITCH_CLIENT_ID }}" && cp -r assets/ output/
+
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./output
