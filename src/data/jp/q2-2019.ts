@@ -18,6 +18,7 @@ export const q2_2019: Array<Member> = [
     name_en: "Yukishiro Mahiro",
     twitterId: "MahiroYukishiro",
     channelId: "UCHX7YpFG8rVwhsHCx34xt7w",
+    twitchName: "mahiro_yukishiro",
   },
   {
     name: "エクス・アルビオ",

@@ -42,6 +42,7 @@ export const q3_2019: Array<Member> = [
     name_en: "Amamiya Kokoro",
     twitterId: "amamiya_kokoro",
     channelId: "UCkIimWZ9gBJRamKF0rmPU8w",
+    twitchName: "amamiyakokoro_",
   },
   {
     name: "エリー・コニファー",
@@ -54,7 +55,7 @@ export const q3_2019: Array<Member> = [
     name_en: "Ratna Petit",
     twitterId: "ratna_petit",
     channelId: "UCIG9rDtgR45VCZmYnd-4DUw",
-    twitchName: "ratona_twitch",
+    twitchName: "petit2434",
   },
   {
     name: "早瀬走",
